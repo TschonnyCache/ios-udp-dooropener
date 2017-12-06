@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17235A5CD158896C95C5A67F /* Pods_ios_udp_dooropener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50AE31EC65B47DFCC36C58A /* Pods_ios_udp_dooropener.framework */; };
 		DDA1B5F21FD8011800B02394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1B5F11FD8011800B02394 /* AppDelegate.swift */; };
 		DDA1B5F41FD8011800B02394 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA1B5F31FD8011800B02394 /* ViewController.swift */; };
-		DDA1B5F71FD8011800B02394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA1B5F51FD8011800B02394 /* Main.storyboard */; };
 		DDA1B5F91FD8011800B02394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDA1B5F81FD8011800B02394 /* Assets.xcassets */; };
 		DDA1B5FC1FD8011800B02394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDA1B5FA1FD8011800B02394 /* LaunchScreen.storyboard */; };
+		DDA1B6031FD801BE00B02394 /* SwiftSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA1B6041FD801BE00B02394 /* SwiftSocket.framework */; };
+		DDD896501FD8055A000D5D9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD8964E1FD80559000D5D9A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76D50DDB2D8EEE72502785BB /* Pods-ios-udp-dooropener.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-udp-dooropener.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-udp-dooropener/Pods-ios-udp-dooropener.debug.xcconfig"; sourceTree = "<group>"; };
+		A50AE31EC65B47DFCC36C58A /* Pods_ios_udp_dooropener.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_udp_dooropener.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B083C547DBF0EFE4CD20D4D7 /* Pods-ios-udp-dooropener.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-udp-dooropener.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-udp-dooropener/Pods-ios-udp-dooropener.release.xcconfig"; sourceTree = "<group>"; };
 		DDA1B5EE1FD8011800B02394 /* ios-udp-dooropener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-udp-dooropener.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA1B5F11FD8011800B02394 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDA1B5F31FD8011800B02394 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DDA1B5F61FD8011800B02394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDA1B5F81FD8011800B02394 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDA1B5FB1FD8011800B02394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDA1B5FD1FD8011800B02394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDA1B6041FD801BE00B02394 /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD8964F1FD80559000D5D9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA1B6031FD801BE00B02394 /* SwiftSocket.framework in Frameworks */,
+				17235A5CD158896C95C5A67F /* Pods_ios_udp_dooropener.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C12E3656EFE7CE3274B8516 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDA1B6041FD801BE00B02394 /* SwiftSocket.framework */,
+				A50AE31EC65B47DFCC36C58A /* Pods_ios_udp_dooropener.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DDA1B5E51FD8011800B02394 = {
 			isa = PBXGroup;
 			children = (
 				DDA1B5F01FD8011800B02394 /* ios-udp-dooropener */,
 				DDA1B5EF1FD8011800B02394 /* Products */,
+				E55A0BFFA84E981927A279BA /* Pods */,
+				7C12E3656EFE7CE3274B8516 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +75,21 @@
 			children = (
 				DDA1B5F11FD8011800B02394 /* AppDelegate.swift */,
 				DDA1B5F31FD8011800B02394 /* ViewController.swift */,
-				DDA1B5F51FD8011800B02394 /* Main.storyboard */,
+				DDD8964E1FD80559000D5D9A /* Main.storyboard */,
 				DDA1B5F81FD8011800B02394 /* Assets.xcassets */,
 				DDA1B5FA1FD8011800B02394 /* LaunchScreen.storyboard */,
 				DDA1B5FD1FD8011800B02394 /* Info.plist */,
 			);
 			path = "ios-udp-dooropener";
+			sourceTree = "<group>";
+		};
+		E55A0BFFA84E981927A279BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76D50DDB2D8EEE72502785BB /* Pods-ios-udp-dooropener.debug.xcconfig */,
+				B083C547DBF0EFE4CD20D4D7 /* Pods-ios-udp-dooropener.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +99,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDA1B6001FD8011800B02394 /* Build configuration list for PBXNativeTarget "ios-udp-dooropener" */;
 			buildPhases = (
+				221EF09228B41FF63EB3575F /* [CP] Check Pods Manifest.lock */,
 				DDA1B5EA1FD8011800B02394 /* Sources */,
 				DDA1B5EB1FD8011800B02394 /* Frameworks */,
 				DDA1B5EC1FD8011800B02394 /* Resources */,
+				AD92B740AC1073C03AD457A6 /* [CP] Embed Pods Frameworks */,
+				D111C379A3F8ED368B58751F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,11 +156,65 @@
 			files = (
 				DDA1B5FC1FD8011800B02394 /* LaunchScreen.storyboard in Resources */,
 				DDA1B5F91FD8011800B02394 /* Assets.xcassets in Resources */,
-				DDA1B5F71FD8011800B02394 /* Main.storyboard in Resources */,
+				DDD896501FD8055A000D5D9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		221EF09228B41FF63EB3575F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-udp-dooropener-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD92B740AC1073C03AD457A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios-udp-dooropener/Pods-ios-udp-dooropener-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-udp-dooropener/Pods-ios-udp-dooropener-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D111C379A3F8ED368B58751F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-udp-dooropener/Pods-ios-udp-dooropener-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DDA1B5EA1FD8011800B02394 /* Sources */ = {
@@ -144,20 +229,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DDA1B5F51FD8011800B02394 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DDA1B5F61FD8011800B02394 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DDA1B5FA1FD8011800B02394 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DDA1B5FB1FD8011800B02394 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DDD8964E1FD80559000D5D9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD8964F1FD80559000D5D9A /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -272,31 +357,35 @@
 		};
 		DDA1B6011FD8011800B02394 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D50DDB2D8EEE72502785BB /* Pods-ios-udp-dooropener.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C6Q8YXWU2;
 				INFOPLIST_FILE = "ios-udp-dooropener/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jonas.kreusch.ios-udp-dooropener";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DDA1B6021FD8011800B02394 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B083C547DBF0EFE4CD20D4D7 /* Pods-ios-udp-dooropener.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C6Q8YXWU2;
 				INFOPLIST_FILE = "ios-udp-dooropener/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jonas.kreusch.ios-udp-dooropener";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftSocket
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,27 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func downstairs(_ sender: UIButton) {
+        let client:UDPClient = UDPClient(address: "host", port: 8888)
+        
+        switch client.send(string:"password 1") {
+        case .success:
+            Swift.debugPrint("success")
+        case .failure(let error):
+            Swift.debugPrint(error)
+        }
+    }
+    
+    @IBAction func upstairs(_ sender: UIButton) {
+        let client:UDPClient = UDPClient(address: "host", port: 8888)
+        
+        switch client.send(string:"password 2") {
+        case .success:
+            Swift.debugPrint("success")
+        case .failure(let error):
+            Swift.debugPrint(error)
+        }
+    }
 
 }
 
